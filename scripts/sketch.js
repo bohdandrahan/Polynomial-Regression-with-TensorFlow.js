@@ -5,7 +5,7 @@ function setup() {
   width = 0.9 * windowWidth;
   let canvas = createCanvas(width, height);
   canvas.parent('sketch-holder')
-  polynomial = new Polynomial(1, datapoitns)
+  polynomial = new Polynomial(2, datapoitns)
 }
 function mousePressed(){
 	mouseDragged();
@@ -22,7 +22,7 @@ function draw() {
 	datapoitns.forEach(point => {
 		point.display();
 	});
-	if(datapoitns.lenth > 0){
+	if(datapoitns.length > 0){
 		polynomial.train();
 	}
 	polynomial.display()
