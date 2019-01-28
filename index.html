@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polynomial Regression</title>
+    <title>Polynomial Regression 
+    with TensorFlow</title>
     <style>
       .parent{
         display: flex;
@@ -11,6 +12,14 @@
         align-items: center;
         width: 100%;
       }
+      .sliders{
+        align-self: center;
+      }
+      .slider{
+        text-align: center;
+        font: 1.2rem 'Roboto', sans-serif;
+      }
+
  </style>
 
   </head>
@@ -19,6 +28,11 @@
         <h1>Polynomial Regression</h1>
         <div id="sketch-holder"></div>
       </div>
+      <div class="sliders">
+          <p class="slider"></p>
+          <div id="slider_0"></div>
+      </div>
+
   </body>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
