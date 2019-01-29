@@ -59,7 +59,7 @@ class Polynomial{
 
 	display(){
 		const curveX = [];
-	  for (let x = -1; x <= 1; x += 0.02) {
+	  for (let x = -1; x <= 1; x += 0.01) {
 	    curveX.push(x);
 	  }
 	  const ys = tf.tidy(() => this.getPrediction(curveX));
